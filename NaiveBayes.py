@@ -60,31 +60,3 @@ print("Prediction using NaiveBayes for word lottery sale",predict_naive_bayes("l
 print("Prediction using NaiveBayes for word asdfgh",predict_naive_bayes("asdfgh"))
 print("Prediction using NaiveBayes ",predict_naive_bayes('Hi mom how are you'))
 
-
-#
-# import pulp as p
-#
-# # Create a LP Minimization problem
-# Lp_prob = p.LpProblem('Problem', p.LpMaximize)
-#
-# # Create problem Variables
-# x = p.LpVariable("x", lowBound=0)  # Create a variable x >= 0
-# y = p.LpVariable("y", lowBound=0)  # Create a variable y >= 0
-#
-# # Objective Function
-# Lp_prob += 3 * x + 5 * y
-#
-# # Constraints:
-# Lp_prob +=  1*x + 2 * y <= 2000
-# Lp_prob +=  x + y <= 1500
-# Lp_prob += x >= 0
-# Lp_prob += y >= 0
-#
-# # Display the problem
-# #print(Lp_prob)
-#
-# status = Lp_prob.solve()  # Solver
-# #print(p.LpStatus[status])  # The solution status
-#
-# # Printing the final solution
-# print(p.value(x), p.value(y), p.value(Lp_prob.objective))
